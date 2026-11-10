@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata Peserta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        fieldset {
+            max-width: 500px;
+            padding: 20px;
+        }
+        input, select, textarea {
+            margin-top: 5px;
+            padding: 7px;
+        }
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<form action="form4.html" method="post">
+    <fieldset>
+        <legend>Formulir Peserta</legend>
+        <p>
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama"
+                   placeholder="Masukkan nama lengkap" required>
+        </p>
+        <p>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"
+                   placeholder="Masukkan username" required>
+        </p>
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"
+                   placeholder="Masukkan password" required>
+        </p>
+        <p>Jenis Kelamin:</p>
+        <input type="radio" id="laki" name="jenkel"
+               value="laki-laki" required>
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenkel"
+               value="perempuan">
+        <label for="perempuan">Perempuan</label>
+        <p>
+            <label for="tanggal">Tanggal Lahir:</label><br>
+            <input type="date" id="tanggal" name="tanggal" required>
+        </p>
+        <p>
+            <label for="agama">Agama:</label><br>
+            <select name="agama" id="agama" required>
+                <option value="">-- Pilih Agama --</option>
+                <option value="budha">Budha</option>
+                <option value="hindu">Hindu</option>
+                <option value="islam">Islam</option>
+                <option value="katholik">Kristen Katholik</option>
+                <option value="protestan">Kristen Protestan</option>
+            </select>
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="contoh@email.com" required>
+        </p>
+        <p>Pilih Course:</p>
+        <input type="checkbox" id="webnative"
+               name="course[]" value="Web Native">
+        <label for="webnative">Web Native</label><br>
+        <input type="checkbox" id="webframework"
+               name="course[]" value="Web Framework">
+        <label for="webframework">Web Framework</label><br>
+        <input type="checkbox" id="mobilenative"
+               name="course[]" value="Mobile Native">
+        <label for="mobilenative">Mobile Native</label><br>
+        <input type="checkbox" id="mobilelintas"
+               name="course[]" value="Mobile Lintas Platform">
+        <label for="mobilelintas">Mobile Lintas Platform</label>
+        <p>
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat"
+                      cols="40" rows="5"
+                      placeholder="Masukkan alamat lengkap"
+                      required></textarea>
+        </p>
+        <button type="submit">Daftar</button>
+    </fieldset>
+</form>
+</body>
+</html>

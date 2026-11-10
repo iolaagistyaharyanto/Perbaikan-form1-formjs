@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Course</title>
+</head>
+<body>
+
+<h2>Form Pendaftaran Course</h2>
+
+<form action="form1.html" method="post">
+
+    <p>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+    </p>
+
+    <p>Jenis Kelamin:</p>
+    <input type="radio" id="laki" name="jenkel"
+           value="laki-laki" required>
+    <label for="laki">Laki-laki</label>
+
+    <input type="radio" id="perempuan" name="jenkel"
+           value="perempuan">
+    <label for="perempuan">Perempuan</label>
+
+    <p>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </p>
+
+    <p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </p>
+
+    <p>Course yang diikuti:</p>
+
+    <input type="checkbox" id="html" name="course[]" value="HTML CSS">
+    <label for="html">HTML & CSS</label><br>
+
+    <input type="checkbox" id="javascript" name="course[]" value="JavaScript">
+    <label for="javascript">JavaScript</label><br>
+
+    <input type="checkbox" id="react" name="course[]" value="React JS">
+    <label for="react">React JS</label><br>
+
+    <input type="checkbox" id="node" name="course[]" value="Node JS">
+    <label for="node">Node JS</label><br><br>
+
+    <button type="submit">Simpan</button>
+
+</form>
+
+</body>
+</html>
